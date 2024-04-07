@@ -1,17 +1,17 @@
 package dev.gustavosa;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
+
+//Herda @Profile Development e @Configuration de MinhaConfig
 @Development
 public class MinhaConfig {
 
     @Bean(name = "applicationName")
-    public String applicationName(){
-        return "Sistema de Vendas";
-    }
-    @Bean(name = "userName")
-    public String userName(){
-        return "Gustavo Sá";
-    }     
+    public CommandLineRunner executar(){
+        return args -> {
+            System.out.println("RODANDO A CONFIGURAÇÃO DE DESENVOLVIMENTO");
+        };
+    }    
 }

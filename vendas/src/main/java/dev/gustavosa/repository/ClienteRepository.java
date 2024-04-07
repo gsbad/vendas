@@ -8,7 +8,6 @@ import dev.gustavosa.model.Cliente;
 public class ClienteRepository {
 
     public void persistir(Cliente cliente) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'persistir'");
     }
     
