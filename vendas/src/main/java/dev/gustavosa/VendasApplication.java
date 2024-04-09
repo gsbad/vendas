@@ -16,7 +16,7 @@ public class VendasApplication {
 
     @Autowired
     //@Qualifier("gato")
-    @Cachorro   
+    @Galinha   
     private Animal animal;
 
     @Bean

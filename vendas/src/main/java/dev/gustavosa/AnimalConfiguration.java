@@ -24,5 +24,14 @@ public class AnimalConfiguration {
             }
         };
     }
+    @Bean(name = "galinha")
+    public Animal galinha(){
+        return new Animal(){
+            @Override
+            public void fazerBarulho(){
+                System.out.println("Cocococo!");
+            }
+        };
+    }
 
 }
